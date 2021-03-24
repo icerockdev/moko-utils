@@ -4,4 +4,4 @@
 
 package dev.icerock.moko.utils
 
-fun multiply(a: Int, b: Int): Int = a * b
+actual fun <R> callOnCurrentWorkerWithoutFreeze(block: () -> R): () -> R = block

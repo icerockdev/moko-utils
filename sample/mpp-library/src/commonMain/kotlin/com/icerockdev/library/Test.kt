@@ -4,10 +4,6 @@
 
 package com.icerockdev.library
 
-import dev.icerock.moko.utils.multiply
-
-class Calculator {
-    fun run() {
-        println(multiply(a = 2, b = 3))
-    }
+class Test {
+    
 }

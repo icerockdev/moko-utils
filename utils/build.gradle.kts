@@ -8,5 +8,7 @@ plugins {
 }
 
 dependencies {
+    commonMainApi(Deps.Libs.MultiPlatform.coroutines)
+
     commonTestImplementation(Deps.Libs.MultiPlatform.mokoTest)
 }
