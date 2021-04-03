@@ -4,24 +4,29 @@
 
 pluginManagement {
     repositories {
-        gradlePluginPortal()
-        google()
         mavenCentral()
+        google()
+        gradlePluginPortal()
 
-        maven { url = uri("https://dl.bintray.com/icerockdev/plugins") }
-
-        jcenter()
+        jcenter {
+            content {
+                includeGroup("org.jetbrains.trove4j")
+            }
+        }
     }
 }
 
 dependencyResolutionManagement {
     repositories {
-        google()
         mavenCentral()
+        google()
 
-        maven { url = uri("https://dl.bintray.com/icerockdev/moko") }
-
-        jcenter()
+        jcenter {
+            content {
+                includeGroup("org.jetbrains.trove4j")
+                includeGroup("org.jetbrains.kotlinx")
+            }
+        }
     }
 }
 
