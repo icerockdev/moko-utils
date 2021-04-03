@@ -1,4 +1,4 @@
-[![GitHub license](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](http://www.apache.org/licenses/LICENSE-2.0) [![Download](https://api.bintray.com/packages/icerockdev/moko/moko-utils/images/download.svg) ](https://bintray.com/icerockdev/moko/moko-utils/_latestVersion) ![kotlin-version](https://img.shields.io/badge/kotlin-1.4.31-orange)
+[![GitHub license](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](http://www.apache.org/licenses/LICENSE-2.0) [![Download](https://img.shields.io/maven-central/v/dev.icerock.moko/utils) ](https://repo1.maven.org/maven2/dev/icerock/moko/utils) ![kotlin-version](https://img.shields.io/badge/kotlin-1.4.31-orange)
 
 # Mobile Kotlin utils
 This is a Kotlin MultiPlatform library that ...
@@ -30,7 +30,7 @@ root build.gradle
 ```groovy
 allprojects {
     repositories {
-        maven { url = "https://dl.bintray.com/icerockdev/moko" }
+        mavenCentral()
     }
 }
 ```
