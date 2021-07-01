@@ -5,15 +5,9 @@
 import java.util.Base64
 
 plugins {
+    id("javadoc-stub-convention")
     id("org.gradle.maven-publish")
     id("signing")
-}
-
-group = "dev.icerock.moko"
-version = Deps.mokoUtilsVersion
-
-val javadocJar by tasks.registering(Jar::class) {
-    archiveClassifier.set("javadoc")
 }
 
 publishing {
@@ -27,9 +21,6 @@ publishing {
     }
 
     publications.withType<MavenPublication> {
-        // Stub javadoc.jar artifact
-        artifact(javadocJar.get())
-
         // Provide artifacts information requited by Maven Central
         pom {
             name.set("MOKO utils")
@@ -37,6 +28,8 @@ publishing {
             url.set("https://github.com/icerockdev/moko-utils")
             licenses {
                 license {
+                    name.set("Apache-2.0")
+                    distribution.set("repo")
                     url.set("https://github.com/icerockdev/moko-utils/blob/master/LICENSE.md")
                 }
             }

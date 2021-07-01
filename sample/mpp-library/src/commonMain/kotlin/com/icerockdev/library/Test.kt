@@ -5,5 +5,5 @@
 package com.icerockdev.library
 
 class Test {
-    
+    var testVariable = "this is a stub-variable for class isn't empty"
 }
