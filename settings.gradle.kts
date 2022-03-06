@@ -9,16 +9,10 @@ dependencyResolutionManagement {
     repositories {
         mavenCentral()
         google()
-
-        jcenter {
-            content {
-                includeGroup("org.jetbrains.kotlinx")
-            }
-        }
     }
 }
-includeBuild("utils-build-logic")
 
 include(":utils")
+
 include(":sample:android-app")
 include(":sample:mpp-library")
