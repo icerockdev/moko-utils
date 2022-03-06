@@ -1,3 +1,4 @@
+![moko-utils](https://user-images.githubusercontent.com/5010169/128706827-ec33a4bf-d9c8-4ac5-88cc-bd180fe7f596.png)  
 [![GitHub license](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](http://www.apache.org/licenses/LICENSE-2.0) [![Download](https://img.shields.io/maven-central/v/dev.icerock.moko/utils) ](https://repo1.maven.org/maven2/dev/icerock/moko/utils) ![kotlin-version](https://kotlin-version.aws.icerock.dev/kotlin-version?group=dev.icerock.moko&name=media)
 
 # Mobile Kotlin utils
@@ -34,7 +35,7 @@ allprojects {
 project build.gradle
 ```groovy
 dependencies {
-    commonMainApi("dev.icerock.moko:utils:0.2.0")
+    commonMainApi("dev.icerock.moko:utils:0.3.0")
 }
 ```
 

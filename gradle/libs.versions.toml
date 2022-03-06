@@ -1,16 +1,32 @@
 [versions]
-kotlinTestVersion = "1.5.20"
+kotlinVersion = "1.6.10"
+
+# android
 androidAppCompatVersion = "1.2.0"
 materialDesignVersion = "1.0.0"
 androidLifecycleVersion = "2.1.0"
 androidCoreTestingVersion = "2.1.0"
-coroutinesVersion = "1.5.0-native-mt"
-mokoTestVersion = "0.4.0"
-mokoUtilsVersion = "0.2.0"
+
+# kotlinx
+coroutinesVersion = "1.6.0-native-mt"
+
+# moko
+mokoTestVersion = "0.6.1"
+mokoUtilsVersion = "0.3.0"
 
 [libraries]
+# android
 appCompat = { module = "androidx.appcompat:appcompat", version.ref = "androidAppCompatVersion" }
 material = { module = "com.google.android.material:material", version.ref = "materialDesignVersion" }
 lifecycle = { module = "androidx.lifecycle:lifecycle-extensions", version.ref = "androidLifecycleVersion" }
+
+# kotlinx
 coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutinesVersion" }
+
+# moko
 mokoTest = { module = "dev.icerock.moko:test-core", version.ref = "mokoTestVersion" }
+
+# gradle plugins
+kotlinGradlePlugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlinVersion" }
+androidGradlePlugin = { module = "com.android.tools.build:gradle", version = "7.0.4" }
+mokoGradlePlugin = { module = "dev.icerock.moko:moko-gradle-plugin", version = "0.1.0" }

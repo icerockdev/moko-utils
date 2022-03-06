@@ -4,4 +4,5 @@
 
 package dev.icerock.moko.utils
 
-actual inline fun Any.ensureNeverFrozen() {}
+@Suppress("NOTHING_TO_INLINE")
+actual inline fun Any.ensureNeverFrozen() = Unit
